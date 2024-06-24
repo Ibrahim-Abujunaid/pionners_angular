@@ -1,0 +1,86 @@
+<div class="down">
+  <div class="swiper-container" dir="rtl">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" ng-repeat="x in majors" ng-init="calc(majors, $index)">
+        <div class="first-property" ng-click="expandProperty($index)">
+          <h1>{{x.num}}</h1>
+          <img ng-src="{{x.img}}" class="rec" alt="rectangle" />
+          <div class="rec1" style="background-color: {{x.rec1Color}};">
+            <p>{{x.major}}</p>
+          </div>
+          <div class="rec2">
+            <p class="more">رؤية المزيد</p>
+            <div class="non">تبدأ الاسعار من 1250</div>
+            <div class="pharagraph1">
+              <p>
+                هندسة السيارات الكهربائية والهايبرد من التخصصات
+                الهندسية التي تلقى رواجاً كبيراً وتحظى بأهمية كبيرة، بسبب ازدياد
+                الطلب الملحوظ عليه في عالم الصناعة والتقدم التكنولوجي، وحاجة سوق
+                العمل الأردني إلى كوادر فنية متميزة وأصحاب مهارات وخبرات عملية
+                عالية في هذا المجال.<br> يهدف الدبلوم التدريبي إلى اكساب الطلاب
+                المهارات اللازمة لصيانة السيارات الكهربائية والهايبرد، ومعرفة
+                مفاهيم هندسة المركبات الهجينة والكهربائية والتطبيقات المتعلقة
+                بالأنظمة الهجينة مثل أنواع البطاريات والمحركات
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="features"><img src="images/features.png" id="img2" alt="" /></div>
+            <div class="university">
+              <h3>الجامعات المتوفرة</h3>
+              <div class="uniline">
+                <div>
+                  <i class="fa-solid fa-arrow-left" style="color: white"></i>
+                </div>
+                <div>الجامعة الامريكية في مأدبا</div>
+              </div>
+              <div class="afory">
+                <div><img src="images/student.png" alt="" /></div>
+                <div><img src="images/student.png" alt="" /></div>
+                <div><img src="images/student.png" alt="" /></div>
+                <div><img src="images/student.png" alt="" /></div>
+                <div><img src="images/student.png" alt="" /></div>
+              </div>
+              <div class="uniline" style="margin-top: 9%;">
+                <div>
+                  <i class="fa-solid fa-arrow-left" style="color: white"></i>
+                </div>
+                <div>جامعة فيلادلفيا</div>
+              </div>
+              <div class="afory1">
+                <div><img src="images/philadifia.png" alt="" /></div>
+                <div><img src="images/philadifia.png" alt="" /></div>
+                <div><img src="images/philadifia.png" alt="" /></div>
+                <div><img src="images/philadifia.png" alt="" /></div>
+                <div><img src="images/philadifia.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="group"><img src="images/Group 130.png" id="im" alt="" />
+              <img src="images/Group 96.png" id="im" style="position: absolute;" alt="" />
+            </div>
+            <div class="certificate">
+              <h3>الشهادات المقدمة</h3>
+              <div class="certificate1">
+                <div><img src="images/certificate2.png" alt=""></div>
+                <div>
+                  <p>شهادة الدبلوم التجريبي من الجامعة,وتصدق من وزارة التعليم العالي</p>
+                </div>
+                <div>
+                  <p>شهادة مزاولة المهنة الأحكام من هيئة تنمية المهارات الفنية والفنية</p>
+                </div>
+                <div><img src="images/certificate1.png" alt=""></div>
+              </div>
+            </div>
+            <div class="bank">
+              <img id="ba" src="images/bank.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: none;" class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div style="display: none;" class="swiper-button-next"></div>
+    <div style="display: none;" class="swiper-button-prev"></div>
+  </div>
+</div>

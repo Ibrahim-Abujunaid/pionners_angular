@@ -1,0 +1,706 @@
+body {
+  position: relative;
+  height: 1806px;
+  background: linear-gradient(90.36deg, #012a79 0.14%, #1f61df 99.52%);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.up {
+  background-image: url("images/01\ -\ background\ 01\ \ 2.png");
+  height: 100vh;
+}
+.mid {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.right p:first-child {
+  width: 39.813rem;
+  height: 140px;
+  right: 100px;
+  top: 139px;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.25rem;
+  line-height: 70px;
+  /* or 135% */
+  display: flex;
+  text-align: right;
+  color: #76fbf6;
+  text-shadow: 0px 0px 10px #76fbf6;
+}
+.right p:nth-child(2) {
+  /* باستخدام الذكاء الاصطناعي */
+  width:35.625rem;
+  height: 32px;
+  right: 100px;
+  margin-left: 10%;
+  top: 303px;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.25rem;
+  line-height: 32px;
+  /* identical to box height, or 62% */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #e132d5;
+  text-shadow: 0px 0px 10px #ff28f0;
+}
+.right p:nth-child(3) {
+  /* لأول مرة في الشرق الأوسط، تطرح أكاديمية الرواد للتدريب، دبلومات تدريبية في أهم التخصصات التي لها مستقبل وظيفي، باستخدام أحدث تقنيات وأدوات الذكاء الإصطناعي وبشهادة من أكبر الجامعات الأردنية. */
+
+  width: 35.75rem;
+  height: 90px;
+
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 30px;
+  /* or 167% */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  padding-left: 7%;
+  flex-grow: 0;
+}
+.right p:nth-child(4) {
+  /* بإمكانك الالتحاق في أي دبلوم تدريبي ترغب في دراسته، مهما كان تحصيلك العلمي في الثانوية العامة، ومن دون شروط مسبقة للدراسة. */
+  width: 35.75rem;
+  height: 60px;
+  padding-left: 7%;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 30px;
+  /* or 167% */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1471px) {
+  .mid {
+    justify-content: center;
+  }
+}
+@media (max-width: 1013px) {
+  .arrow img {
+    width: 90%;
+  }
+}
+.down {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 28px;
+  gap: 24px;
+  position: absolute;
+  width: 90%;
+  height: 608px;
+  right: 35px;
+  top: 1000px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.down::-webkit-scrollbar {
+  height: 7px;
+}
+
+/* Track */
+.down::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.down::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.down::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.first-property {
+  direction: ltr !important;
+  min-width: 403px;
+  height: 534px;
+  flex: 0 0 auto;
+  position: relative;
+  right: 0;
+  top: 20px;
+  transition: transform 0.5s ease, min-width 1s ease, height 1s ease;
+  border: 1px solid #76fbf6;
+  filter: drop-shadow(0px 0px 10px #76fbf6);
+  border-radius: 19.1161px;
+}
+.first-property h1 {
+  color: white;
+  margin-left: 4%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.first-property:not(.expanded):hover {
+  height: 564px;
+}
+.first-property:not(.expanded):hover .rec1 {
+  margin-top: 10%;
+  transform: translateX(0px);
+}
+.first-property:not(.expanded):hover .rec1 p {
+  position: fixed;
+}
+.first-property:not(.expanded):hover .rec2 {
+  margin-top: 10%;
+}
+.first-property:not(.expanded):hover .rec2 .more {
+  transition: transform 0.5s ease;
+  display: none;
+}
+.first-property:not(.expanded):hover .rec2::before {
+  content: "اطلب استشارة";
+  position: absolute;
+  height: 22px;
+  right: 20%;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16.9717px;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ffffff;
+  transition-duration: 5s;
+}
+.rec {
+  position: absolute;
+  width: 331px;
+    height: 287px;
+  right: 0px;
+  top: 20px;
+  /* background: url(images/Rectangle\ 3.png); */
+  background-repeat: no-repeat;  /* Prevents the background from repeating */
+  background-size: cover;  /* Ensures the image covers the entire div */
+  background-position: center;  /* Centers the background image */
+  border-radius: 68.2718px 0px 0px 0px;
+  z-index: 1;
+}
+.rec1 {
+  position: absolute;
+    width: 97%;
+    height: 444px;
+    left: 1px;
+    top: 66px;
+    transition: transform 0.5s ease, margin-top 1s ease;
+    background-image: url("images/07\ -\ ring03\ 3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 30px;
+}
+.rec1 p {
+  position: absolute;
+  width: 211px;
+  height: 44px;
+  left: calc(50% - 211px / 2 + 0.5px);
+  top: 244px;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.531px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #ffffff;
+}
+.rec2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  transition: transform 0.5s ease, margin-top 1s ease;
+  position: absolute;
+  right: 0px;
+  top: 412px;
+  width: 136.89px;
+  height: 41.09px;
+  background: #ffa000;
+  border-radius: 16.3852px 0px 0px 0px;
+}
+.rec2 p {
+  position: absolute;
+  width: 76px;
+  height: 22px;
+  right: 20%;
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16.9717px;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ffffff;
+}
+
+.first-property.expanded {
+  min-width: 100%;
+  height: 900px;
+  overflow-y: scroll;
+  right: 0;
+  top: 0;
+  transition: min-width 2s ease, height 1s ease;
+}
+.first-property.expanded::-webkit-scrollbar {
+  width: 8px;
+  margin-right: 2%;
+}
+
+/* Track */
+.first-property.expanded::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+  border-radius: 8px; /* Match the rounded corners */
+}
+
+/* Handle */
+.first-property.expanded::-webkit-scrollbar-thumb {
+  background: #c1c1c185; 
+  border-radius: 8px; /* Match the rounded corners */
+}
+
+/* Handle on hover */
+.first-property.expanded::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a87a; 
+}
+.first-property.expanded .rec {
+  width: 90%;
+  height: 500px;
+  z-index: 1;
+}
+.first-property.expanded .rec1 {
+  left: 0;
+  height: 1160px;
+  border-radius: 0px 0px 100px 0px;
+}
+.first-property.expanded .rec1 p{
+  position: absolute;
+width: 90%;
+height: 70px;
+left: 11%;
+top: 43%;
+
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 320%;
+line-height: 70px;
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #FFFFFF;
+
+}
+.first-property.expanded .rec2{
+  top: 800px;
+  height: 57px;
+  width: 15%;
+  right: 15%;
+}
+.first-property.expanded .rec2 .more{
+  transition: transform 0.5s ease;
+  display: none;
+}
+.first-property.expanded .rec2::before{
+  content: "اطلب الاستشارة";
+  position: absolute;
+width: 100%;
+height: 32px;
+left: 10%;
+top: calc(50% - 32px/2 + 0.5px);
+
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 800;
+font-size:140%;
+line-height: 32px;
+/* identical to box height, or 160% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
+}
+
+
+@media (max-width: 1470px) {
+  .up {
+    height: 120vh;
+  }
+  .down {
+    top: 1353px;
+  }
+}
+.rec2 .non{
+  /* تبدأ الأسعار من 1250JD */
+width: 246px;
+height: 32px;
+margin-right: 400%;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+display: none;
+align-items: flex-end;
+text-align: right;
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+position: absolute;
+
+}
+.first-property.expanded .rec2 .non {
+  display: flex; 
+}
+.pharagraph1{
+  z-index: 11111;
+}
+.pharagraph1 p span{
+  /* Line 4 */
+margin-top: 10%;
+position: absolute;
+width: 40px;
+height: 0px;
+top:710px;
+left: 1114px;
+
+border: 3px solid #76FBF6;
+}
+.pharagraph1 p{
+    margin-top: 50%;
+  width: 1096px;
+height: 210px;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 50px;
+direction: rtl;
+/* or 167% */
+display: none;
+align-items: flex-end;
+text-align: justify;
+color: #FFFFFF;
+
+
+}
+@media (max-width: 1527px) {
+  .pharagraph1 p{
+    width: 903px;
+    margin-top: 66%;
+  }
+}
+@media (max-width: 1330px) {
+  .first-property.expanded .rec2::before{
+    font-size: 100%;
+  }
+  .first-property.expanded .rec1 p{
+    font-size: 220%;
+  }
+  .pharagraph1 p{
+    width: 724px;
+    margin-top: 85%;
+    font-size: 16px;
+  }
+  .rec2 .non{
+    margin-right: 295%;
+  }
+}
+@media (max-width: 1207px) {
+  #img2{
+    width: 100%;
+  }
+}
+@media (max-width: 1016px) {
+  .pharagraph1 p{
+    width: 603px;
+    margin-top: 114%;
+  }
+  .first-property.expanded .rec2{
+    width: 16%;
+  }
+}
+
+.first-property.expanded .pharagraph1 p{
+  display: flex;
+}
+.features{
+  margin-top: 1490px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.first-property.expanded .features{
+  display: flex;
+}
+.university{
+  display: none;
+  position: absolute;
+width: 73%;
+height: 1191px;
+right: 80px;
+top: 2410px;
+
+background: rgba(154, 187, 46, 0.8);
+border: 1px solid #76FBF6;
+box-shadow: 0px 0px 10px #76FBF6;
+border-radius: 0px 0px 0px 100px;
+
+}
+.first-property.expanded .university{
+  display: block;
+}
+.university h3{
+  /* الجامعات المتوفرة */
+
+position: relative;
+width:95%;
+height: 70px;
+
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 70px;
+/* identical to box height, or 135% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+justify-content: end;
+
+color: #FFFFFF;
+
+
+}
+.uniline{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5% 0 5%;
+}
+.uniline div{
+  height: 70px;
+
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 300;
+font-size: 42px;
+line-height: 70px;
+/* identical to box height, or 135% */
+display: flex;
+align-items: flex-end;
+text-align: right;
+justify-content: end;
+
+color: #FFFFFF;
+}
+.afory{
+  display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+margin-top: 6%;
+padding: 4px 4px 4px 20px;
+gap: 12px;
+
+
+width: 1218px;
+left: calc(50% - 1218px/2);
+top: 29.55%;
+bottom: -0.95%;
+overflow-x: hidden;
+}
+.afory div{
+min-width: 340px;
+height: 294px;
+top: 4px;
+background: linear-gradient(0deg, rgba(12, 12, 27, 0.2), rgba(12, 12, 27, 0.2));
+border-radius: 30px;
+}
+.afory1{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 20px 4px 4px;
+gap: 12px;
+width: 1218px;
+margin-top: 4%;
+overflow-x: hidden;
+}
+.afory1 div{
+  min-width: 340px;
+  height: 294px;
+  top: 4px;
+  background: linear-gradient(0deg, rgba(12, 12, 27, 0.2), rgba(12, 12, 27, 0.2));
+  border-radius: 30px;
+}
+.group{
+  margin-top: 1700px;
+  display: none;
+  align-items: center;
+  justify-content: center
+}
+.first-property.expanded .group{
+  display: flex;
+}
+.certificate{
+  display: none;
+width: 90%;
+margin-left: 10%;
+background: rgba(154, 187, 46, 0.8);
+border-radius: 100px 0px 0px 0px;
+padding-bottom: 5%;
+}
+.first-property.expanded .certificate{
+  display: block;
+}
+
+.certificate h3{
+  position: relative;
+width: 100%;
+height: 70px;
+right: 100px;
+top: 100px;
+font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 70px;
+/* identical to box height, or 135% */
+display: flex;
+align-items: flex-end;
+justify-content: end;
+text-align: right;
+color: #FFFFFF;
+}
+.certificate1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.certificate1 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Almarai';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 50px;
+color: #ffffff;
+text-align: end;
+}
+.certificate1 div:nth-child(2),.certificate1 div:nth-child(3){
+  padding: 0 17% 0 17%;
+}
+.bank{
+  margin-top: 100px;
+  display: none;
+  justify-content: center;
+}
+.first-property.expanded .bank{
+  display: flex;
+}
+@media (max-width: 665px) {
+  .right p:first-child {
+    width: 90%;
+    font-size:181%;
+  }
+  .right p:nth-child(2){
+      font-size: 240%;
+  }
+  .right p:nth-child(3),.right p:nth-child(2),.right p:nth-child(4),.right p:first-child{
+    width: 90%;
+    height: auto;
+  }  
+  .left img{
+    width: 100%;
+  }
+  .arrow .img{
+    width: 90%;
+  }
+}
+@media (max-width: 529px){
+     .right p{
+      text-align: center;
+    line-height: 1.5;
+     }
+}
+@media (max-width: 350px){
+  .right p:nth-child(2){
+    font-size: 202%;
+    text-align: center;
+  }
+}
+
+
+.swiper-container {
+  display: flex;
+  flex-direction: row-reverse;
+ min-width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-wrapper{
+  min-width: 100%;
+}
+.swiper-slide.swiper-slide-active {
+  width: 100% 
+}
+@media (max-width: 1268px){
+  #im{
+    width: 100%;
+  }
+  #ba{
+    width: 100%;
+  }
+  .certificate1{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 13%;
+  }
+}
